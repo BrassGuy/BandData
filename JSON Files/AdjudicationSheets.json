@@ -1,0 +1,176 @@
+{
+  "Music Ensemble": {
+    "Achievement of Musicianship": [
+      "Shaping",
+      "Inflection",
+      "Phrasing and musical nuance",
+      "Expression",
+      "Idiomatic interpretation",
+      "Depth of the musical challenge",
+      "Consideration of the totality of the environment",
+      "Musical understanding"
+    ],
+    "Sound / Tuning / Technique": [
+      "Consistency of timbre and sonority",
+      "Tuning of winds and percussion",
+      "Breath support and embouchure",
+      "Balance of winds and percussion",
+      "Cohesiveness with respect to tempo",
+      "Demonstration of articulation",
+      "Ensemble Blend",
+      "Quality of intonation"
+    ],
+    "Judging Scale": {
+      "Never": "0-49",
+      "Rarely": "50-59",
+      "Sometimes": "60-79",
+      "Frequently": "80-89",
+      "Consistently": "90-100"
+    },
+    "Max Points": 100
+  },
+  "Music General Effect": {
+    "Effectiveness of the Repertoire": [
+      "Coordination",
+      "Pacing",
+      "Concept",
+      "Continuity",
+      "Interpretation of the music",
+      "Tension/Release",
+      "Impact and Climaxes",
+      "Aesthetic/Intellectual/Emotional Qualities",
+      "Creativity and Originality"
+    ],
+    "Effectiveness of the Performers": [
+      "Communication",
+      "Emotional intensity",
+      "Nuances",
+      "Expressive effect",
+      "Excellence as effect",
+      "Professionalism"
+    ],
+    "Judging Scale": {
+      "Never": "0-49",
+      "Rarely": "50-59",
+      "Sometimes": "60-79",
+      "Frequently": "80-89",
+      "Consistently": "90-100"
+    },
+    "Max Points": 100
+  },
+  "Visual Ensemble": {
+    "Composing Process": [
+      "Logical Development",
+      "Quality use of the elements of design",
+      "Clarity of emphasis",
+      "Variety in design",
+      "Use of stage, color and props in design",
+      "Musical structure, phrasing, nuances",
+      "Visual musicality"
+    ],
+    "Achievement of Excellence and Technique": [
+      "Demonstration of ensemble training",
+      "Technique for ensemble cohesiveness",
+      "Clarity of form, body and equipment",
+      "Precision through the ensemble",
+      "Variety of responsibilities",
+      "Challenge of responsibilities",
+      "Response to the challenges of the music"
+    ],
+    "Judging Scale": {
+      "Never": "0-49",
+      "Rarely": "50-59",
+      "Sometimes": "60-79",
+      "Frequently": "80-89",
+      "Consistently": "90-100"
+    },
+    "Max Points": 100
+  },
+  "Visual General Effect": {
+    "Effectiveness of the Repertoire": [
+      "Coordination",
+      "Pacing",
+      "Concept",
+      "Continuity",
+      "Interpretation of the music",
+      "Tension/Release",
+      "Impact and Climaxes",
+      "Aesthetic/Intellectual/Emotional Qualities",
+      "Creativity and Originality"
+    ],
+    "Effectiveness of the Performers": [
+      "Communication",
+      "Emotional Intensity",
+      "Nuances",
+      "Expressive effect",
+      "Excellence as effect",
+      "Professionalism"
+    ],
+    "Judging Scale": {
+      "Never": "0-49",
+      "Rarely": "50-59",
+      "Sometimes": "60-79",
+      "Frequently": "80-89",
+      "Consistently": "90-100"
+    },
+    "Max Points": 100
+  },
+  "Color Guard": {
+    "Program Content: Overall Vocabulary": [
+      "Use of Form, Body, and Equipment",
+      "Use of Expressive Components of Space, Time, Weight, and Flow",
+      "Variety",
+      "Visual Musicality",
+      "Staging",
+      "Integration",
+      "Totality and Unity",
+      "Use within the Overall Design Process",
+      "Clarity of Emphasis",
+      "Musical Structure, Phrasing, and Nuances"
+    ],
+    "Achievement Through Form, Body, and Equipment": [
+      "Demonstration of Training",
+      "Compatibility",
+      "Clarity of Form, Body, and Equipment",
+      "Precision",
+      "Variety of Responsibilities",
+      "Clarity of Style and Technique",
+      "Considerations of the Overall Environment",
+      "General Expressive and Technical Skills"
+    ],
+    "Judging Scale": {
+      "Never": "0-49",
+      "Rarely": "50-59",
+      "Sometimes": "60-79",
+      "Frequently": "80-89",
+      "Consistently": "90-100"
+    },
+    "Max Points": 100
+  },
+  "Percussion": {
+    "Composition": [
+      "Orchestration",
+      "Elements of Design (Melody, Harmony, Rhythm, Dynamics)",
+      "Range of Content",
+      "Variety",
+      "Continuity",
+      "Clarity of Intent",
+      "Simultaneous Responsibility"
+    ],
+    "Performance Quality": [
+      "Sound Production",
+      "Musicianship",
+      "Rhythmic Clarity",
+      "Uniformity",
+      "Ensemble Cohesiveness"
+    ],
+    "Judging Scale": {
+      "Never": "0-49",
+      "Rarely": "50-59",
+      "Sometimes": "60-79",
+      "Frequently": "80-89",
+      "Consistently": "90-100"
+    },
+    "Max Points": 100
+  }
+}

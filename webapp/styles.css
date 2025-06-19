@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #E0E0E0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #1E1E1E;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2c2c2c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.drop-zone {
+  margin-top: 0.5rem;
+  padding: 2rem;
+  border: 2px dashed #444;
+  border-radius: 8px;
+  text-align: center;
+  color: #888;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.drop-zone.dragover {
+  background: #333;
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+.hidden-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-subtitle {
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #aaa;
+}
+
+#uploader {
+  margin-bottom: 20px; 
+}
+
+/* New Styles */
+.tab-container {
+  margin-top: 2rem;
+}
+
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid #2c2c2c;
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #E0E0E0;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.tab-button.active {
+  color: #00bcd4;
+  border-bottom-color: #00bcd4;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.goal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+}
+
+.goal label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.goal input {
+  padding: 0.5rem;
+  background: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #E0E0E0;
+}
+
+#saveGoals {
+  padding: 0.75rem 1.5rem;
+  background: #00bcd4;
+  border: none;
+  border-radius: 4px;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#saveGoals:hover {
+  background: #00acc1;
+}
+
+/* Seasonal analysis card styles */
+.season-card {
+  background: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #383838;
+}
+
+.season-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.season-stats .positive {
+  color: #8bc34a; /* Green */
+}
+
+.season-stats .negative {
+  color: #ff5722; /* Red */
+} 

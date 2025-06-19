@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orem Band Score Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Orem Marching Band Analytics Dashboard</h1>
+
+    <div class="tab-container">
+      <div class="tab-nav">
+        <button class="tab-button active" data-tab="tab-overall">Overall Analysis</button>
+        <button class="tab-button" data-tab="tab-seasonal">Seasonal Analysis</button>
+        <button class="tab-button" data-tab="tab-2025-prep">2025 Season</button>
+        <button class="tab-button" data-tab="tab-historical">Judge Comment Trends</button>
+      </div>
+      <div id="tab-overall" class="tab-content active">
+        <section id="trends">
+          <h2>Score Trends Over Time</h2>
+          <p id="trendsYears" class="chart-subtitle"></p>
+          <canvas id="overallChart"></canvas>
+          <div id="captionCharts" class="grid"></div>
+        </section>
+        <section id="extremes">
+          <h2>Highest & Lowest Scores</h2>
+          <p><strong>Highest:</strong> <span id="highScore"></span></p>
+          <p><strong>Lowest:</strong> <span id="lowScore"></span></p>
+        </section>
+        <section id="insights">
+          <h2>Key Insights</h2>
+          <div id="insightsList"></div>
+        </section>
+        <section id="recommendations">
+          <h2>Targeted Recommendations</h2>
+          <div id="recList"></div>
+        </section>
+        <section id="detailed-summary">
+            <h2>Detailed Summary</h2>
+            <p id="summaryText"></p>
+        </section>
+      </div>
+      <div id="tab-seasonal" class="tab-content">
+        <section id="seasonal-analysis">
+          <h2>Per-Season Analytics</h2>
+          <div id="seasonalCharts" class="grid"></div>
+        </section>
+        <section id="prep-comparison">
+          <h2>Season-over-Season Comparison</h2>
+          <canvas id="comparisonChart"></canvas>
+        </section>
+      </div>
+      <div id="tab-2025-prep" class="tab-content">
+        <section id="prep-2025-trend">
+          <h2>2025 Score Trend</h2>
+          <div id="container-2025-chart">
+              <canvas id="chart-2025"></canvas>
+          </div>
+        </section>
+        <section id="prep-comments">
+          <h2>2025 Judge Comment Analysis</h2>
+          <div id="commentAnalysisResults" style="display:none;">
+            <h3>Recurring Strengths</h3>
+            <ul id="strengthsList"></ul>
+            <h3>Recurring Weaknesses</h3>
+            <ul id="weaknessesList"></ul>
+            <h3>Keyword Frequency</h3>
+            <div id="keywordFrequency"></div>
+          </div>
+        </section>
+      </div>
+      <div id="tab-historical" class="tab-content">
+        <section id="historical-comment-analysis">
+            <h2>Historical Comment Analysis</h2>
+            <div class="grid">
+              <div id="historical-strengths">
+                <h3>Common Strengths</h3>
+                <ul id="historical-strengths-list"></ul>
+              </div>
+              <div id="historical-weaknesses">
+                <h3>Common Weaknesses</h3>
+                <ul id="historical-weaknesses-list"></ul>
+              </div>
+            </div>
+            <div id="historical-keywords">
+              <h3>Keyword Frequency</h3>
+              <div id="historical-keyword-frequency"></div>
+            </div>
+            <div id="historical-summary">
+              <h3>Detailed Summary</h3>
+              <p id="historical-summary-text"></p>
+            </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html> 
