@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nebo Tournament of Bands - 6A Scholastic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 6px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .school {
+      text-align: left;
+      font-weight: bold;
+    }
+    .subheader {
+      background-color: #e0e0e0;
+    }
+    /* Hide auxiliary file inputs used by JS */
+    .hidden-file {
+      display: none;
+    }
+    .template {
+      display: none;
+    }
+
+    /* Hide calculation rows that don't have a school name */
+    tbody tr:has(td.school:empty) {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Orem Marching Band Analytics - Consolidated Score Sheets</h1>
+  <button id="consolidateBtn" type="button">Consolidate Score Sheets</button>
+  <button id="createJsonBtn" type="button" style="display: none;">Create JSON</button>
+  <p><strong>Date:</strong> <span id="currentDate"></span></p>
+
+  <!-- Hidden input allowing user to pick the ScoreSheets folder -->
+  <input type="file" id="pdfFolderInput" accept="application/pdf" webkitdirectory multiple class="hidden-file" />
+
+  <table id="scoreTableTemplate" class="template">
+    <thead>
+      <tr>
+        <th rowspan="3">School</th>
+
+        <th colspan="7">Music</th>
+        <th colspan="7">Visual</th>
+        <th colspan="3">Percussion</th>
+        <th colspan="3">Color Guard</th>
+        <th colspan="2">Penalties</th>
+        <th colspan="2">Total</th>
+      </tr>
+      <tr class="subheader">
+        <th colspan="3">Ensemble</th>
+        <th colspan="3">Effect</th>
+        <th>Total</th>
+
+        <th colspan="3">Ensemble</th>
+        <th colspan="3">Effect</th>
+        <th>Total</th>
+
+        <th colspan="2">Score</th>
+        <th>Total</th>
+
+        <th colspan="2">Score</th>
+        <th>Total</th>
+
+        <th>Pen</th><th>Tot</th>
+        <th>Score</th><th>Rank</th>
+      </tr>
+      <tr>
+        <!-- Music Ensemble -->
+        <th>Musc</th><th>Tech</th><th>Tot</th>
+        <!-- Music Effect -->
+        <th>Rep</th><th>Perf</th><th>Tot</th>
+        <!-- Music Total -->
+        <th>Music</th>
+
+        <!-- Visual Ensemble -->
+        <th>Comp</th><th>Perf</th><th>Tot</th>
+        <!-- Visual Effect -->
+        <th>Rep</th><th>Perf</th><th>Tot</th>
+        <!-- Visual Total -->
+        <th>Visual</th>
+
+        <!-- Percussion -->
+        <th>Ach</th><th>Tot</th><th>Perc</th>
+
+        <!-- Color Guard -->
+        <th>Voc</th><th>Tot</th><th>Guard</th>
+
+        <!-- Penalties -->
+        <th></th><th></th>
+
+        <!-- Final -->
+        <th></th><th></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Load PDF.js and consolidation logic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="consolidate.js"></script>
+  <script>
+    document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+  </script>
+</body>
+</html>
